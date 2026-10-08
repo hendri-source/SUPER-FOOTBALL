@@ -1,0 +1,25 @@
+name: super_football_pbp
+description: "Aplikasi Super Football Mobile PBP - GridView, ListView, Google Maps Stadium & Madridista Edition"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^2.5.3
+  url_launcher: ^6.2.5
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/src/assets/images/
+    - assets/src/assets/images/players/
