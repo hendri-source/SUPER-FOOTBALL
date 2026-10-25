@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppNavbarWidget extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onLogout;
+  final String supporterLabel;
 
   const AppNavbarWidget({
     super.key,
     required this.onLogout,
+    required this.supporterLabel,
   });
 
   @override
@@ -26,7 +28,8 @@ class AppNavbarWidget extends StatelessWidget implements PreferredSizeWidget {
               ),
               borderRadius: BorderRadius.circular(8),
             ),
-            child: const Icon(Icons.sports_soccer, color: Color(0xFF0B0F17), size: 16),
+            child: const Icon(Icons.sports_soccer,
+                color: Color(0xFF0B0F17), size: 16),
           ),
           const SizedBox(width: 8),
           const Text(
@@ -39,23 +42,32 @@ class AppNavbarWidget extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
           const SizedBox(width: 8),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-            decoration: BoxDecoration(
-              color: const Color(0xFFFBBF24).withOpacity(0.2),
-              borderRadius: BorderRadius.circular(6),
-              border: Border.all(color: const Color(0xFFFBBF24).withOpacity(0.4)),
-            ),
-            child: const Text(
-              'Madridista',
-              style: TextStyle(color: Color(0xFFFBBF24), fontSize: 10, fontWeight: FontWeight.bold),
+          Flexible(
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              decoration: BoxDecoration(
+                color: const Color(0xFFFBBF24).withOpacity(0.2),
+                borderRadius: BorderRadius.circular(6),
+                border:
+                    Border.all(color: const Color(0xFFFBBF24).withOpacity(0.4)),
+              ),
+              child: Text(
+                supporterLabel,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                    color: Color(0xFFFBBF24),
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ],
       ),
       actions: [
         IconButton(
-          icon: const Icon(Icons.logout_rounded, color: Color(0xFF94A3B8), size: 20),
+          icon: const Icon(Icons.logout_rounded,
+              color: Color(0xFF94A3B8), size: 20),
           tooltip: 'Keluar ke Menu Masuk',
           onPressed: onLogout,
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/data/football.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -14,16 +15,8 @@ class _LoginScreenState extends State<LoginScreen> {
   String _selectedClub = 'Real Madrid CF';
   bool _isLoading = false;
 
-  final List<String> _clubsList = [
-    'Real Madrid CF',
-    'FC Barcelona',
-    'Manchester City FC',
-    'Liverpool FC',
-    'FC Bayern München',
-    'Arsenal FC',
-    'Inter Milan',
-    'Paris Saint-Germain',
-  ];
+  final List<String> _clubsList =
+      FootballData.clubs.map((club) => club.name).toList();
 
   @override
   void dispose() {

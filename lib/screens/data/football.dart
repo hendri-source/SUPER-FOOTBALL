@@ -8,6 +8,7 @@ class FootballData {
     Club(
       id: 'real-madrid',
       name: 'Real Madrid CF',
+      supporterLabel: 'Madridista',
       shortName: 'RMA',
       league: 'La Liga',
       country: 'Spanyol',
@@ -43,6 +44,7 @@ class FootballData {
     Club(
       id: 'barcelona',
       name: 'FC Barcelona',
+      supporterLabel: 'Culé',
       shortName: 'BAR',
       league: 'La Liga',
       country: 'Spanyol',
@@ -79,6 +81,7 @@ class FootballData {
     Club(
       id: 'manchester-city',
       name: 'Manchester City FC',
+      supporterLabel: 'Cityzen',
       shortName: 'MCI',
       league: 'Premier League',
       country: 'Inggris',
@@ -114,6 +117,7 @@ class FootballData {
     Club(
       id: 'liverpool',
       name: 'Liverpool FC',
+      supporterLabel: 'Kopite',
       shortName: 'LIV',
       league: 'Premier League',
       country: 'Inggris',
@@ -149,6 +153,7 @@ class FootballData {
     Club(
       id: 'arsenal',
       name: 'Arsenal FC',
+      supporterLabel: 'Gooner',
       shortName: 'ARS',
       league: 'Premier League',
       country: 'Inggris',
@@ -184,6 +189,7 @@ class FootballData {
     Club(
       id: 'bayern-munich',
       name: 'FC Bayern München',
+      supporterLabel: 'Die Roten',
       shortName: 'BAY',
       league: 'Bundesliga',
       country: 'Jerman',
@@ -219,6 +225,7 @@ class FootballData {
     Club(
       id: 'inter-milan',
       name: 'Inter Milan',
+      supporterLabel: 'Interista',
       shortName: 'INT',
       league: 'Serie A',
       country: 'Italia',
@@ -255,6 +262,7 @@ class FootballData {
     Club(
       id: 'psg',
       name: 'Paris Saint-Germain',
+      supporterLabel: 'Les Parisiens',
       shortName: 'PSG',
       league: 'Ligue 1',
       country: 'Prancis',
@@ -289,6 +297,7 @@ class FootballData {
     Club(
       id: 'atletico-madrid',
       name: 'Atlético de Madrid',
+      supporterLabel: 'Colchonero',
       shortName: 'ATM',
       league: 'La Liga',
       country: 'Spanyol',
@@ -321,6 +330,7 @@ class FootballData {
     Club(
       id: 'tottenham',
       name: 'Tottenham Hotspur FC',
+      supporterLabel: 'Spurs',
       shortName: 'TOT',
       league: 'Premier League',
       country: 'Inggris',
@@ -353,6 +363,7 @@ class FootballData {
     Club(
       id: 'manchester-united',
       name: 'Manchester United FC',
+      supporterLabel: 'Red Devil',
       shortName: 'MUN',
       league: 'Premier League',
       country: 'Inggris',
@@ -385,6 +396,7 @@ class FootballData {
     Club(
       id: 'chelsea',
       name: 'Chelsea FC',
+      supporterLabel: 'The Blues',
       shortName: 'CHE',
       league: 'Premier League',
       country: 'Inggris',
@@ -417,6 +429,7 @@ class FootballData {
     Club(
       id: 'juventus',
       name: 'Juventus FC',
+      supporterLabel: 'Juventino',
       shortName: 'JUV',
       league: 'Serie A',
       country: 'Italia',
@@ -450,6 +463,7 @@ class FootballData {
     Club(
       id: 'borussia-dortmund',
       name: 'Borussia Dortmund',
+      supporterLabel: 'Die Schwarzgelben',
       shortName: 'BVB',
       league: 'Bundesliga',
       country: 'Jerman',

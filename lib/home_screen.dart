@@ -84,6 +84,13 @@ class _HomeScreenState extends State<HomeScreen> {
       .where((club) => _favoriteClubIds.contains(club.id))
       .toList(growable: false);
 
+  String get _supporterLabel {
+    for (final club in _allClubs) {
+      if (club.name == _favoriteClub) return club.supporterLabel;
+    }
+    return 'Football Fan';
+  }
+
   void _toggleFavorite(Club club) {
     setState(() {
       if (!_favoriteClubIds.add(club.id)) {
@@ -110,6 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFF0B0F17),
       appBar: AppNavbarWidget(
+        supporterLabel: _supporterLabel,
         onLogout: () {
           Navigator.pushReplacementNamed(context, '/login');
         },

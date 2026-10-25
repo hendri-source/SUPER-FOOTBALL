@@ -1,8 +1,3 @@
-// ============================================================================
-// COMPONENT: USER PROFILE CARD (HENDRI)
-// Berkas: flutter_pbp/lib/components/user_profile_card.dart
-// ============================================================================
-
 import 'package:flutter/material.dart';
 import '../components/app.assets.dart';
 import '../shared/model/club.dart';

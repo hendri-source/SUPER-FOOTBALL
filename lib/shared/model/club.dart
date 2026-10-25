@@ -1,6 +1,7 @@
 class Club {
   final String id;
   final String name;
+  final String supporterLabel;
   final String shortName;
   final String league;
   final String country;
@@ -23,6 +24,7 @@ class Club {
   const Club({
     required this.id,
     required this.name,
+    required this.supporterLabel,
     required this.shortName,
     required this.league,
     required this.country,
