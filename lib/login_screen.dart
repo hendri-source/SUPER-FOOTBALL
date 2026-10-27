@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/app.assets.dart';
 import 'screens/data/football.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -67,48 +68,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Logo & Icon Emas
+                  // Logo
                   Center(
-                    child: Container(
-                      width: 72,
-                      height: 72,
-                      decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFFFBBF24), Color(0xFFD97706)],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
-                        borderRadius: BorderRadius.circular(24),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0xFFFBBF24).withOpacity(0.3),
-                            blurRadius: 20,
-                            offset: const Offset(0, 8),
-                          ),
-                        ],
-                      ),
-                      child: const Icon(
-                        Icons.sports_soccer,
-                        size: 38,
-                        color: Color(0xFF0B0F17),
-                      ),
+                    child: Image.asset(
+                      AppAssets.superFootballLogo,
+                      width: 176,
+                      height: 150,
+                      fit: BoxFit.contain,
+                      semanticLabel: 'Super Football',
                     ),
                   ),
                   const SizedBox(height: 20),
 
-                  // Judul Profesional: Jelajahi Dunia Sepak Bola
-                  const Center(
-                    child: Text(
-                      'SUPER FOOTBALL',
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: 2.0,
-                        color: Color(0xFFFBBF24),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 6),
                   const Center(
                     child: Text(
                       'Jelajahi Dunia Sepak Bola',

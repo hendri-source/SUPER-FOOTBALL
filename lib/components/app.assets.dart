@@ -2,6 +2,7 @@ abstract final class AppAssets {
   static const _images = 'assets/src/assets/images/';
   static const _nestedImages = '${_images}src/assets/images/';
   static const _deepImages = '${_nestedImages}src/assets/images/';
+  static const superFootballLogo = '${_images}super_football_logo.png';
   static const heroStadium = '${_deepImages}football_stadium_night_1790727155951.jpg';
   static const creatorProfile = '${_deepImages}football_stadium_night_1790727155951.jpg';
   static const liveMatch = '${_nestedImages}real_madrid_action_photo_1790728199161.jpg';
