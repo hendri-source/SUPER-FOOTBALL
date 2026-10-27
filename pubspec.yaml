@@ -12,6 +12,9 @@ dependencies:
   google_maps_flutter: ^2.5.3
   url_launcher: ^6.2.5
   cupertino_icons: ^1.0.6
+  firebase_core: ^5.1.0
+  cloud_firestore: ^7.1.0
+  firebase_auth: ^7.0.1
 
 dev_dependencies:
   flutter_test:

@@ -1,0 +1,31 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "super-football-web",
+          "configurations": {
+            "ios": "1:1034854802605:ios:e46963a6bc4cb3cddd1224",
+            "macos": "1:1034854802605:ios:e46963a6bc4cb3cddd1224",
+            "web": "1:1034854802605:web:08c344e8b819a286dd1224",
+            "windows": "1:1034854802605:web:725dace8586ed11add1224"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
